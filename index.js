@@ -8,8 +8,6 @@ const app = express();
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-const http = require("node:http");
-
 const mongoose = require("mongoose");
 const httpStatusText = require("./utils/httpStatusText");
 
